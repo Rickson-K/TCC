@@ -123,6 +123,31 @@ html, body {
 /* CONTEUDO */
 /* ===========//=========== */
 
+#scrollToTopButton {
+    width: 45px; /* Ajuste a largura conforme necessário */
+    height: 45px; /* Ajuste a altura conforme necessário */
+    background-color: var(--cor-fundo-menu-referencias); /* Cor de fundo do botão */
+    border-radius: 50%; /* Deixa o botão redondo */
+    position: fixed;
+    bottom: 80px;
+    right: 80px;
+    text-align: center; /* Alinha o conteúdo horizontalmente */
+    line-height: 20px; /* Centraliza verticalmente o conteúdo */
+    font-size: 24px; /* Ajuste o tamanho do caractere conforme necessário */
+    color: #fff; /* Cor do texto */
+    cursor: pointer;
+    display: none; /* Inicialmente, oculta o botão */
+    z-index: 1000; /* Garante que o botão esteja acima de outros elementos */
+}
+  
+#scrollToTopButton:hover {
+    background-color: var(--cor-fundo-menu-hover-referencias); /* Cor de fundo ao passar o mouse (opcional) */
+}
+  
+#scrollToTopButton.active {
+    display: block; /* Mostra o botão quando está ativo */
+}
+
 .conteudo {
     flex: 1 0 auto;
     margin-bottom: 48px;
