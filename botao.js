@@ -50,7 +50,7 @@ function scrollToTop() {
   const scrollToTop = window.setInterval(function() {
     const pos = window.pageYOffset;
     if (pos > 0) {
-      window.scrollTo(0, pos - 40); // Quanto menor o valor, mais suave é a rolagem
+      window.scrollTo(0, pos - 100); // Quanto menor o valor, mais suave é a rolagem
     } else {
       window.clearInterval(scrollToTop);
     }
